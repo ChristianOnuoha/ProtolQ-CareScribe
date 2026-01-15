@@ -4,6 +4,8 @@
 To assist UK care workers in producing clear, compliant documentation
 without removing professional judgment or introducing unsafe automation.
 
+![CareScribe Workflow](ProtolQ carescribe MVPv1 workflow.jpg)
+
 ## High-Level Workflow
 
 1. Care worker provides raw input
