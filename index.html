@@ -4,304 +4,207 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> ProtolQ CareScribe </title>
-
-  <meta name="description" content="ProtolQ CareScribe helps UK adult social care professionals turn visit conversations into structured, compliance-aligned care notes with human review always in control." />
+  <meta name="description" content="Care Act–aligned case notes from conversation to compliance. Built for UK adult social care professionals." />
 
   <style>
-    :root {
-      --bg: #0b0d12;
-      --card: #121620;
-      --text: #e9ecf1;
-      --muted: #aab0c0;
-      --accent: #5b7cfa;
-      --border: #1f2535;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
+      color: #111;
+      background: #fff;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 72px 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    section {
-      border-bottom: 1px solid var(--border);
+    h1 { font-size: 50px; line-height: 1.2; }
+    h2 { font-size: 37px; margin-top: 60px; }
+    p, li { font-size: 20px; }
+    small { font-size: 15px; color: #555; }
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
     }
 
-    h1 {
-      font-size: clamp(2.4rem, 5vw, 3.2rem);
-      line-height: 1.2;
-      margin-bottom: 16px;
+    .logo span {
+      font-weight: 400;
+      font-size: 14px;
+      color: #555;
+      display: block;
     }
 
-    h2 {
-      font-size: clamp(1.8rem, 4vw, 2.3rem);
-      margin-bottom: 16px;
-    }
-
-    p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 700px;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 16px;
-      margin-top: 28px;
-      flex-wrap: wrap;
+    .cta {
+      margin-top: 30px;
     }
 
     .btn {
+      display: inline-block;
       padding: 14px 22px;
-      border-radius: 10px;
+      margin-right: 12px;
+      border-radius: 6px;
+      text-decoration: none;
       font-weight: 600;
-      border: 1px solid var(--border);
-      background: var(--card);
+      border: 1px solid #111;
     }
 
-    .btn.primary {
-      background: var(--accent);
-      border-color: var(--accent);
+    .btn-primary {
+      background: #111;
       color: #fff;
     }
 
-    .trust-line {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: var(--muted);
+    .btn-secondary {
+      background: transparent;
+      color: #111;
     }
 
     ul {
-      margin-top: 20px;
       padding-left: 20px;
     }
 
-    li {
-      margin-bottom: 10px;
-      color: var(--muted);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 32px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
-
-    .diagram {
-      margin-top: 32px;
-      text-align: center;
-    }
-
-    .diagram img {
-      max-width: 100%;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-    }
-
-    .diagram-caption {
-      margin-top: 12px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
     footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9rem;
-      color: var(--muted);
+      border-top: 1px solid #eee;
+      margin-top: 80px;
+      padding-top: 30px;
+      font-size: 15px;
     }
 
     footer a {
-      color: var(--muted);
-      margin: 0 8px;
+      color: #111;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      h2 { font-size: 28px; }
+      p, li { font-size: 18px; }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Care Act–ready case notes.<br />From conversation to compliance in minutes.</h1>
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      CareScribe
+      <span>by ProtolQ</span>
+    </div>
+
+    <!-- HERO -->
+    <h1>Care Act–ready case notes.<br />From conversation to compliance in minutes.</h1>
+
+    <p>
+      ProtolQ CareScribe turns recorded social care visits into structured, compliant case notes —
+      with risks, actions, and safeguarding signals clearly captured and reviewed by you.
+    </p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the early access waitlist</a>
+      <a class="btn btn-secondary" href="https://github.com/ChristianOnuoha/ProtolQ-CareScribe/blob/main/concept/mvp-scope-public.md" target="_blank">View MVP scope</a>
+    </div>
+
+    <p><small>Built for UK adult social care • Privacy-first • No audio stored</small></p>
+
+    <!-- PROBLEM -->
+    <h2>Documentation is stealing time from care.</h2>
+    <ul>
+      <li>Care workers write notes after visits; tired, rushed, incomplete</li>
+      <li>Most tools give transcripts, not compliance-ready notes</li>
+      <li>Missing details create risk, rework, and burnout</li>
+    </ul>
+
+    <!-- SOLUTION -->
+    <h2>Meet ProtolQ CareScribe.</h2>
+    <p>
+      CareScribe listens to visit conversations and helps draft structured, Care Act–aligned case notes,
+      ready for human review, editing, and approval.
+    </p>
+    <p><strong>You stay in control. CareScribe supports the paperwork.</strong></p>
+
+    <ul>
+      <li>Transcribes visit conversations</li>
+      <li>Structures notes into clear sections</li>
+      <li>Flags missing or unclear information</li>
+      <li>Produces editable draft notes</li>
+    </ul>
+
+    <p><strong>Not just transcription. Care intelligence.</strong></p>
+
+    <!-- DIAGRAM NOTE -->
+    <h2>How CareScribe works</h2>
+    <p>
+      From voice → structured care notes → export.<br />
+      No audio storage. Human review always.
+    </p>
+
+    <!-- MVP SCOPE -->
+    <h2>Designed for real care workflows</h2>
+    <p><strong>Does:</strong></p>
+    <ul>
+      <li>Record care visits</li>
+      <li>Generate structured care notes</li>
+      <li>Flag missing compliance elements</li>
+      <li>Highlight risks & next actions</li>
+      <li>Export as PDF or structured text</li>
+    </ul>
+
+    <p><strong>Does not:</strong></p>
+    <ul>
+      <li>Clinical diagnosis or advice</li>
+      <li>Care Act or MCA assessments</li>
+      <li>Replace professional judgment</li>
+      <li>Store raw audio</li>
+      <li>Submit reports automatically</li>
+    </ul>
+
+    <!-- TRUST -->
+    <h2>Designed for trust, privacy, and accountability.</h2>
+    <ul>
+      <li>Audio auto-deleted after transcription</li>
+      <li>Human approval required</li>
+      <li>No hidden automation</li>
+      <li>Built with UK care frameworks in mind</li>
+    </ul>
+
+    <p><small>CareScribe supports documentation. Professional accountability remains with the user.</small></p>
+
+    <!-- WHO IT'S FOR -->
+    <h2>Built for adult social care professionals</h2>
+    <ul>
+      <li>Social workers</li>
+      <li>Community-based care teams</li>
+      <li>Care agencies</li>
+      <li>Domiciliary care providers</li>
+    </ul>
+
+    <!-- CTA -->
+    <h2>We’re piloting with UK care professionals.</h2>
+    <p>
+      CareScribe is in early pilot. We’re validating real workflows not chasing features.
+      If you work in UK adult social care and want to reduce documentation fatigue, we’d like to hear from you.
+    </p>
+
+    <a class="btn btn-primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the waitlist</a>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><strong>ProtolQ CareScribe</strong><br />
+      A product by Ikesys Innovations Ltd</p>
 
       <p>
-        ProtolQ CareScribe turns recorded social care visits into structured,
-        compliance-aligned care notes with risks, actions, and safeguarding
-        signals clearly captured and reviewed by you.
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="mailto:support@protolq.com">Contact</a>
       </p>
+    </footer>
 
-      <div class="buttons">
-        <a class="btn primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the early access waitlist</a>
-        <a class="btn" href="https://github.com/ChristianOnuoha/ProtolQ-CareScribe/blob/main/concept/mvp-scope-public.md" target="_blank">View MVP scope</a>
-      </div>
-
-      <div class="trust-line">
-        Built for UK adult social care • Privacy-first • No audio stored
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEM -->
-  <section>
-    <div class="container">
-      <h2>Documentation is stealing time from care.</h2>
-      <ul>
-        <li>Care workers write notes after visits; tired, rushed, incomplete</li>
-        <li>Most tools provide transcripts, not compliance-ready notes</li>
-        <li>Missing details increase risk, rework, and burnout</li>
-      </ul>
-      <p><strong>The result?</strong> Burnout, inconsistency, and avoidable risk.</p>
-    </div>
-  </section>
-
-  <!-- SOLUTION -->
-  <section>
-    <div class="container">
-      <h2>Meet ProtolQ CareScribe.</h2>
-      <p>
-        CareScribe listens to visit conversations and helps draft structured,
-        Care Act–aligned care notes ready for human review, editing, and approval.
-        You stay in control. CareScribe supports the paperwork.
-      </p>
-
-      <ul>
-        <li>Transcribes visit conversations</li>
-        <li>Structures notes into clear sections</li>
-        <li>Flags missing or unclear information</li>
-        <li>Produces editable draft notes</li>
-      </ul>
-
-      <p><strong>Not just transcription. Care intelligence.</strong></p>
-    </div>
-  </section>
-
-  <!-- DIAGRAM -->
-  <section>
-    <div class="container">
-      <h2>How CareScribe works</h2>
-
-      <div class="diagram">
-        <!-- Replace src with your uploaded image -->
-        <img src="carescribe-architecture.png" alt="CareScribe MVP Architecture Diagram" />
-        <div class="diagram-caption">
-          From voice → structured care notes → export. No audio storage. Human review always.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOES / DOESN'T -->
-  <section>
-    <div class="container">
-      <h2>Designed for real care workflows</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>What it does</h3>
-          <ul>
-            <li>Record care visits</li>
-            <li>Generate structured care notes</li>
-            <li>Flag missing compliance elements</li>
-            <li>Highlight risks & next actions</li>
-            <li>Export PDF or structured text</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>What it doesn’t do</h3>
-          <ul>
-            <li>Clinical diagnosis or advice</li>
-            <li>Care Act or MCA assessments</li>
-            <li>Replace professional judgment</li>
-            <li>Store raw audio</li>
-            <li>Submit reports automatically</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST -->
-  <section>
-    <div class="container">
-      <h2>Designed for trust, privacy, and accountability.</h2>
-      <ul>
-        <li>Audio auto-deleted after transcription</li>
-        <li>Human approval required</li>
-        <li>No hidden automation</li>
-        <li>Built with UK care frameworks in mind</li>
-      </ul>
-      <p>
-        <em>CareScribe supports documentation. Professional accountability remains with the user.</em>
-      </p>
-    </div>
-  </section>
-
-  <!-- WHO -->
-  <section>
-    <div class="container">
-      <h2>Built for adult social care professionals</h2>
-      <ul>
-        <li>Social workers</li>
-        <li>Community-based care teams</li>
-        <li>Care agencies</li>
-        <li>Domiciliary care providers</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section>
-    <div class="container">
-      <h2>We’re piloting with UK care professionals.</h2>
-      <p>
-        CareScribe is in early pilot. We’re validating real workflows not chasing features.
-        If you work in UK adult social care and want to reduce documentation fatigue,
-        we’d like to hear from you.
-      </p>
-
-      <div class="buttons">
-        <a class="btn primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the waitlist</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div>
-      <strong>ProtolQ CareScribe</strong><br />
-      A product by Ikesys Innovations Ltd
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>
