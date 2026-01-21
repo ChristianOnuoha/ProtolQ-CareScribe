@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> ProtolQ CareScribe </title>
+  <title> ProtolQ CareScribe Care Act–aligned case notes </title>
   <meta name="description" content="Care Act–aligned case notes from conversation to compliance. Built for UK adult social care professionals." />
 
   <style>
@@ -26,16 +26,19 @@
     p, li { font-size: 20px; }
     small { font-size: 15px; color: #555; }
 
+    /* LOGO */
     .logo {
-      font-weight: 700;
-      font-size: 22px;
+      font-weight: 800; /* slightly bolder */
+      font-size: 24px;
+      letter-spacing: -0.3px;
     }
 
     .logo span {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 14px;
       color: #555;
       display: block;
+      margin-top: 2px;
     }
 
     .cta {
@@ -66,6 +69,39 @@
       padding-left: 20px;
     }
 
+    /* DIAGRAM */
+    .diagram {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .diagram img {
+      max-width: 100%;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    /* MVP BOXES */
+    .mvp-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .box {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
     footer {
       border-top: 1px solid #eee;
       margin-top: 80px;
@@ -79,10 +115,14 @@
       margin-right: 15px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       h1 { font-size: 36px; }
       h2 { font-size: 28px; }
       p, li { font-size: 18px; }
+
+      .mvp-boxes {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -98,7 +138,7 @@
     </div>
 
     <!-- HERO -->
-    <h1>Care Act–ready case notes.<br />From conversation to compliance in minutes.</h1>
+    <h1>Care Act–ready case notes.<br />From conversation to compliance — in minutes.</h1>
 
     <p>
       ProtolQ CareScribe turns recorded social care visits into structured, compliant case notes —
@@ -115,7 +155,7 @@
     <!-- PROBLEM -->
     <h2>Documentation is stealing time from care.</h2>
     <ul>
-      <li>Care workers write notes after visits; tired, rushed, incomplete</li>
+      <li>Care workers write notes after visits — tired, rushed, incomplete</li>
       <li>Most tools give transcripts, not compliance-ready notes</li>
       <li>Missing details create risk, rework, and burnout</li>
     </ul>
@@ -137,32 +177,39 @@
 
     <p><strong>Not just transcription. Care intelligence.</strong></p>
 
-    <!-- DIAGRAM NOTE -->
+    <!-- DIAGRAM -->
     <h2>How CareScribe works</h2>
-    <p>
-      From voice → structured care notes → export.<br />
-      No audio storage. Human review always.
-    </p>
+    <div class="diagram">
+      <img src="carescribe-architecture.png" alt="CareScribe architecture diagram" />
+      <p><small>From voice → structured care notes → export. No audio storage. Human review always.</small></p>
+    </div>
 
-    <!-- MVP SCOPE -->
+    <!-- MVP BOXED -->
     <h2>Designed for real care workflows</h2>
-    <p><strong>Does:</strong></p>
-    <ul>
-      <li>Record care visits</li>
-      <li>Generate structured care notes</li>
-      <li>Flag missing compliance elements</li>
-      <li>Highlight risks & next actions</li>
-      <li>Export as PDF or structured text</li>
-    </ul>
 
-    <p><strong>Does not:</strong></p>
-    <ul>
-      <li>Clinical diagnosis or advice</li>
-      <li>Care Act or MCA assessments</li>
-      <li>Replace professional judgment</li>
-      <li>Store raw audio</li>
-      <li>Submit reports automatically</li>
-    </ul>
+    <div class="mvp-boxes">
+      <div class="box">
+        <h3>What the MVP does</h3>
+        <ul>
+          <li>Record care visits</li>
+          <li>Generate structured care notes</li>
+          <li>Flag missing compliance elements</li>
+          <li>Highlight risks & next actions</li>
+          <li>Export as PDF or structured text</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>What it does not do</h3>
+        <ul>
+          <li>Clinical diagnosis or advice</li>
+          <li>Care Act or MCA assessments</li>
+          <li>Replace professional judgment</li>
+          <li>Store raw audio</li>
+          <li>Submit reports automatically</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- TRUST -->
     <h2>Designed for trust, privacy, and accountability.</h2>
@@ -187,7 +234,7 @@
     <!-- CTA -->
     <h2>We’re piloting with UK care professionals.</h2>
     <p>
-      CareScribe is in early pilot. We’re validating real workflows not chasing features.
+      CareScribe is in early pilot. We’re validating real workflows — not chasing features.
       If you work in UK adult social care and want to reduce documentation fatigue, we’d like to hear from you.
     </p>
 
