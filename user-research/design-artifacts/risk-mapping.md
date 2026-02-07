@@ -1,7 +1,7 @@
 ## Risk Type → Example → Impact
 
-#Omission → Missing key info → Audit risk
+- Omission → Missing key info → Audit risk
 
-#Inconsistency → Different wording → Inspection queries
+- Inconsistency → Different wording → Inspection queries
 
-#Delay → Late notes → Compliance gaps
+- Delay → Late notes → Compliance gaps
