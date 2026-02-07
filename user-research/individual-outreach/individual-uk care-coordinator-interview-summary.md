@@ -40,6 +40,14 @@ FOLLOW-UP:
 - Notes:
 Strong signal for guided documentation support.
 
+ADMIN TIME ESTIMATE:
+- ~5% of shift
+- Documentation secondary to task completion (domiciliary care)
+
+IMPORTANT CONTEXT:
+- Admin time is not the bottleneck
+- Risk exists despite low admin time
+
 
 ADDITIONAL SIGNAL:
 - Expressed openness to part-time admin / employment
