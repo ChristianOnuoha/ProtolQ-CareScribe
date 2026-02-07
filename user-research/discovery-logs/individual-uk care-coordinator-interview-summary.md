@@ -36,3 +36,6 @@ INTEREST SIGNAL:
 
 FOLLOW-UP:
 - Open for further conversaction
+
+- Notes:
+Strong signal for guided documentation support.
