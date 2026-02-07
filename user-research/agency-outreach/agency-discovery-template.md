@@ -1,26 +1,11 @@
+# Agency Discovery Call — Manager Level
 
-# CareScribe – Agency Validation Interview
+Purpose: Understand documentation risk and operational pressure
 
-
-(Context)
-- To ground me — how is care documentation handled across your team today?
-(system used, who completes it, and when)
-
-(Consistency Risk)
-- Where do you see the biggest inconsistencies between staff when it comes to documentation?
-
-(Time & Cost Signal)
-- Roughly how many staff-hours per week go into care notes, incident reporting, and admin?
-
-(Inspection Pressure)
-- What typically causes the most stress during CQC inspections or internal audits?
-
-(Failure Mode)
-- When issues are raised, are they usually about missing information, late records, or quality of notes?
-
-(Change Readiness)
-- If documentation became more consistent and audit-safe, where would that help you most operationally?
-
-(🔒 Closing)
-- Thanks — that’s exactly the insight I was looking for.
-Would you be open to staying in touch if we later explore a small pilot around this?
+Questions:
+1. How are care notes completed across your organisation today?
+2. Approx. staff hours spent weekly on documentation/admin?
+3. Where does documentation usually break down?
+4. What creates the most stress during inspections or audits?
+5. How do you ensure consistency across carers?
+6. If documentation improved, where would that help most?
