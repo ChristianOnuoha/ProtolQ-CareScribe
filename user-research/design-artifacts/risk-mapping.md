@@ -1,4 +1,3 @@
-## Risk Type → Example → Impact
 
 
 | Risk Type | Description | Who Feels It | Trigger |
