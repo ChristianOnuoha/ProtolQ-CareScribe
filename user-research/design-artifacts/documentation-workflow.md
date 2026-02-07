@@ -1,7 +1,6 @@
 
-## What information must always be captured?
+## Current state → pain → opportunity
 
-- Care task performed
-- Observation
-- Incident markers
-- Follow-up needed
+- Live documentation
+- High cognitive load
+- Risk of omission
