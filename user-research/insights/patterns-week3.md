@@ -2,7 +2,7 @@
 
 ### 1. Key Validations
 *   **Root Cause:** Risk exposure persists even in efficient workflows; it is a **structural** issue, not an operational one.
-*   **Human Factor:** Compliance failure is systemic—individual "typing speed" or effort isn't the fix.
+*   **Human Factor:** Compliance failure is systemic — individual "typing speed" or effort isn't the fix.
 *   **The Agency Gap:** Third-party staff create a permanent "visibility void" and audit exposure.
 
 ### 2. The CareScribe Pivot
