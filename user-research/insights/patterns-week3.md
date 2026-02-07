@@ -1,18 +1,15 @@
-## PATTERN EMERGING — INDIVIDUAL LEVEL
+## Strategic Reframing: Productivity vs. Risk
 
-1. Documentation risk is NOT typing speed
-2. Primary risk is narrative accuracy and information omission
-3. Compliance pressure is systemic, not an individual failure
-4. Third-party / agency staff create ongoing audit exposure
-5. Tools exist, but ownership and responsibility gaps remain
+### 1. Key Validations
+*   **Root Cause:** Risk exposure persists even in efficient workflows; it is a **structural** issue, not an operational one.
+*   **Human Factor:** Compliance failure is systemic—individual "typing speed" or effort isn't the fix.
+*   **The Agency Gap:** Third-party staff create a permanent "visibility void" and audit exposure.
 
-INSIGHT
+### 2. The CareScribe Pivot
+We are shifting the value proposition from **Documentation Assistance** (productivity) to **Risk-Aware Documentation Intelligence** (compliance).
 
-CareScribe is shifting from:
-"documentation assistance"
-
-to:
-"risk-aware documentation intelligence"
-
-This reframes the product from productivity support to
-compliance risk mitigation.
+| From: Productivity Support | To: Risk Mitigation |
+| :--- | :--- |
+| Focus on "Admin time" | Focus on "Narrative accuracy" |
+| Solving "Operational speed" | Solving "Information omission" |
+| Assisting the individual | Protecting the system/agency |
