@@ -41,7 +41,7 @@ FOLLOW-UP:
 Strong signal for guided documentation support.
 
 
-##ADDITIONAL SIGNAL:
+ADDITIONAL SIGNAL:
 - Expressed openness to part-time admin / employment
 
 INTERPRETATION:
