@@ -39,3 +39,12 @@ FOLLOW-UP:
 
 - Notes:
 Strong signal for guided documentation support.
+
+
+##ADDITIONAL SIGNAL:
+- Expressed openness to part-time admin / employment
+
+INTERPRETATION:
+- Indicates perceived legitimacy of project
+- NOT a hiring signal to act on
+- Do not engage in recruitment at this stage
