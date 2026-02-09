@@ -1,34 +1,32 @@
-# CareScribe — 6 Week MVP Launch Plan
-
-## Week 1 — Foundation
-- Define problem clearly
-- Publish system overview
-- Create waitlist landing page
-- Share founder context publicly
-
-## Week 2 — User Discovery
-- Speak with UK care workers
-- Validate pain points
-- Refine documentation workflows
-
-## Week 3 — Workflow Prototyping
-- Draft AI-assisted documentation flows
-- Test prompt structures
-- Simulate real documentation scenarios
-
-## Week 4 — MVP Assembly
-- Connect input → AI → review loop
-- Focus on reliability over features
-- No integrations yet
-
-## Week 5 — Pilot Feedback
-- Small controlled testing
-- Observe time saved
-- Identify confusion or trust issues
-
-## Week 6 — Refinement & Soft Launch
-- Improve clarity and UX
-- Finalise positioning
-- Prepare for broader pilot conversations
-
-We Believe Success is defined by **time saved and confidence gained**, not feature count.
+🚀 Project Roadmap: Risk-Aware Documentation Logic
+📋 Phase Overview
+Week	Focus	Status
+Week 1	Foundation & Framework	✅ Complete
+Week 2	Stakeholder Discovery	✅ Complete
+Week 3	Risk Mapping & Logic	✅ Complete
+Week 4	Logic Validation	🏗️ In Progress
+Week 5	Functional Prototype	📅 Upcoming
+Week 6	Pilot Readiness	📅 Upcoming
+🛠️ Weekly Breakdown
+Week 1: Foundation
+Define problem: Shift focus from admin speed to Narrative Risk.
+Framework: Establish the "Visibility Void" framework.
+Week 2: Stakeholder Discovery
+Interviews: Engaged with UK Care Coordinators and Clinicians.
+Regulatory Alignment: Captured specific CQC Regulation 17 language for compliance.
+Week 3: Risk Mapping & Logic
+Gap Analysis: Identified "Silent Omissions" in standard care notes.
+Logic Drafting: Developed initial Risk-Aware documentation logic.
+Week 4: Logic Validation CURRENT
+Simulation Prototype: Deliver "The Walkthrough."
+Expert Testing: Validate Narrative Gap logic with 1–2 domain experts.
+Refinement: Sharpen the "Compliance-first" value framing.
+Week 5: Functional Prototype UPCOMING
+Engine Build: Develop the Risk-Aware Logic Engine (Input → AI Audit → Compliance Flag).
+QA: Manual testing of AI-flagging accuracy and reliability.
+Week 6: Pilot Readiness & Soft Launch UPCOMING
+Implementation Plan: Finalize the Pilot strategy.
+Business Dev: Initiate formal pilot conversations with agency directors.
+💡 Key Concepts
+Narrative Risk: The danger posed by technically "accurate" notes that fail to capture the clinical or safety context required by regulators.
+Visibility Void: The gap between daily care actions and the documented evidence available for CQC audits.
