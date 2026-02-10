@@ -32,6 +32,17 @@
 - [ ] **Expert Testing:** Validate Narrative Gap logic with 1–2 domain experts.
 - [ ] **Refinement:** Sharpen the "Compliance-first" value framing.
 
+### Week 4: Logic Validation & Simulation
+**Focus:** Narrative Accuracy & Risk Identification
+
+- [ ] **Objective:** Validate that CareScribe logic identifies "Silent Omissions" in care notes.
+- [ ] **Milestone:** Complete 1-2 "Simulation Walkthroughs" with UK Care Professionals.
+- [ ]   **Artifacts:** 
+    *   `simulations/narrative-gap-analysis.md`
+    *   `simulations/feedback-session-log.md`
+- [ ] **Success Metric:** Stakeholder confirms that "Enhanced Notes" reduce audit exposure by >30%.
+
+
 ### Week 5: Functional Prototype `UPCOMING`
 - [ ] **Engine Build:** Develop the Risk-Aware Logic Engine (`Input` → `AI Audit` → `Compliance Flag`).
 - [ ] **QA:** Manual testing of AI-flagging accuracy and reliability.
