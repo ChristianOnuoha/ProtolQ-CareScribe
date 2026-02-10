@@ -27,12 +27,7 @@
 - [x] **Gap Analysis:** Identified "Silent Omissions" in standard care notes.
 - [x] **Logic Drafting:** Developed initial Risk-Aware documentation logic.
 
-### Week 4: Logic Validation `CURRENT`
-- [ ] **Simulation Prototype:** Deliver "The Walkthrough."
-- [ ] **Expert Testing:** Validate Narrative Gap logic with 1–2 domain experts.
-- [ ] **Refinement:** Sharpen the "Compliance-first" value framing.
-
-### Week 4: Logic Validation & Simulation
+### Week 4: Logic Validation & Simulation `CURRENT`
 **Focus:** Narrative Accuracy & Risk Identification
 
 - [ ] **Objective:** Validate that CareScribe logic identifies "Silent Omissions" in care notes.
