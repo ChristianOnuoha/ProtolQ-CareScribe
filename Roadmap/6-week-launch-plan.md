@@ -7,7 +7,7 @@
 | **Week 1** | Foundation & Framework | ✅ Complete |
 | **Week 2** | Stakeholder Discovery | ✅ Complete |
 | **Week 3** | Risk Mapping & Logic | ✅ Complete |
-| **Week 4** | Logic Validation | 🏗️ **In Progress** |
+| **Week 4** | Logic Validation & Simulation | 🏗️ **In Progress** |
 | **Week 5** | Functional Prototype | 📅 Upcoming |
 | **Week 6** | Pilot Readiness | 📅 Upcoming |
 
