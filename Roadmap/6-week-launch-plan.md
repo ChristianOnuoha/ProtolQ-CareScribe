@@ -1,4 +1,4 @@
-# 🚀 Project Roadmap: Risk-Aware Documentation Logic
+# 🚀 CareScribe Roadmap: Compliance-Aligned Documentation Logic
 
 ## 📋 Phase Overview
 
