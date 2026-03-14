@@ -1,22 +1,49 @@
-# CareScribe — Narrative Gap Simulation
+# CareScribe
 
-CareScribe is a logic-validation tool for care documentation,
-designed to surface narrative omissions that create audit risk.
+CareScribe is an early-stage documentation intelligence concept designed to help identify narrative gaps in adult social care records that may create compliance or audit risks.
 
-## What This Repo Contains
+---
 
-1️⃣ Foundations — research + problem definition  
-2️⃣ Simulation — design and logic rules  
-3️⃣ Validation — tester scripts and logs  
-4️⃣ Roadmap — planning and progress  
-5️⃣ References — domain context
+## The Problem
 
-## How to Navigate
+Care professionals operate under time pressure, and documentation often becomes a retrospective task.  
+Small narrative gaps can later create compliance issues during audits or incident reviews.
 
-Start with /1-foundations/problem-statement.md
-Then go to /2-simulation
-Then /3-validation once testing begins
+---
 
-## How to Contribute
-If you are a reviewer or advisor:
-Drop notes into /3-validation/tester-logs
+## The Experiment
+
+This project explores whether structured documentation logic can help identify those gaps earlier.
+
+A prototype simulation was built to test:
+
+• narrative completeness  
+• incident documentation logic  
+• risk flagging
+
+---
+
+## Prototype Simulation
+
+Live simulation:
+
+[https://carescribe-flow-sim.bubbleapps.io/version-test]
+
+---
+
+## Validation Phase
+
+Currently running usability tests with care professionals to understand:
+
+• whether risk flags make sense  
+• whether documentation flow reflects real practice  
+• where narrative gaps commonly occur
+
+---
+
+## Repository Structure
+
+foundations/ → problem definition  
+simulation/ → prototype logic  
+validation/ → user testing framework  
+insights/ → key learnings
