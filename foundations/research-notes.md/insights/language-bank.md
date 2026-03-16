@@ -11,6 +11,7 @@ Purpose: Capture exact wording used by practitioners and managers
 - "Body mapping"
 - "Incidents reporting"
 - "Live documentation"
+- "Language barrier"
 - "Documented as we go"
 
 ## Time & Cognitive Load
