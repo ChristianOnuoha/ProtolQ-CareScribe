@@ -25,4 +25,4 @@ This project explores whether structured documentation logic can help identify t
 ![CareScribe Architecture](./carescribe-architecture.png)
 
 ## About
-[protol-q-care-scribe.vercel.app](https://protol-q-care-scribe.vercel.app)
+[www.protolq.com](https://protolq.com)
