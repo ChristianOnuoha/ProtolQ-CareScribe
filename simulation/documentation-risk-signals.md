@@ -6,7 +6,7 @@
 | **Document Type** | Research Framework |
 | **Scope** | UK Adult Social Care Documentation |
 | **Status** | 🧪 Early-Stage Signal Definition |
-| **Last Updated** | January 2026 |
+| **Last Updated** | March 2026 |
 
 ---
 
