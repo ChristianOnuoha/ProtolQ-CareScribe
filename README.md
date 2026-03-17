@@ -1,5 +1,5 @@
-# Founder-led research into documentation risk in UK adult social care
-### CareScribe — Documentation Intelligence Research.
+# CareScribe — Documentation Intelligence Research
+### Founder-led research into documentation risk in UK adult social care.
 
 CareScribe is an early-stage research project exploring documentation risk patterns in UK adult social care. The focus is on understanding how small narrative gaps in care records can evolve into compliance risks during inspections, safeguarding reviews, and internal audits.
 
