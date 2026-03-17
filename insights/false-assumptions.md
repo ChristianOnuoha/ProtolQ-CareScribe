@@ -5,7 +5,7 @@
 | :--- | :--- |
 | **Document Type** | Insight Log (Critical Thinking) |
 | **Status** | 🟢 Active |
-| **Last Updated** | January 2026 |
+| **Last Updated** | March 2026 |
 
 ## Purpose
 This document captures invalidated assumptions identified during early-stage research. These insights are critical to the evolution of CareScribe as they prevent premature product decisions and anchor our shift toward **documentation visibility** and **risk interpretation**.
