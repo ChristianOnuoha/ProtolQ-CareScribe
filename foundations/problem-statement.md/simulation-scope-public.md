@@ -7,7 +7,7 @@
 | **Project** | ProtolQ CareScribe |
 | **Audience** | Advisors, Early Collaborators, Domain Experts |
 | **Status** | 🟢 Active Validation Phase |
-| **Last Updated** | January 2026 |
+| **Last Updated** | March 2026 |
 
 ---
 
