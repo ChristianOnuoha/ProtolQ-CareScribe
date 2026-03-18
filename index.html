@@ -1,89 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> ProtolQ CareScribe Care Act–aligned case notes </title>
-  <meta name="description" content="Care Act–aligned case notes from conversation to compliance. Built for UK adult social care professionals." />
+  <title>CareScribe — Documentation Review & Audit Readiness Support</title>
+  <meta name="description" content="CareScribe helps care teams identify documentation gaps, inconsistencies, and missing context before review or audit." />
 
   <style>
+    :root {
+      --primary: #111;
+      --secondary: #555;
+      --bg: #fff;
+      --box-bg: #fafafa;
+      --border: #e5e5e5;
+      --accent-muted: #f6f6f6;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
-      color: #111;
-      background: #fff;
+      color: var(--primary);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 24px;
     }
 
-    h1 { font-size: 50px; line-height: 1.2; }
-    h2 { font-size: 37px; margin-top: 60px; }
-    p, li { font-size: 20px; }
-    small { font-size: 15px; color: #555; }
-
-    /* LOGO */
     .logo {
-      font-weight: 800; /* slightly bolder */
-      font-size: 24px;
-      letter-spacing: -0.3px;
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
     }
 
     .logo span {
-      font-weight: 500;
-      font-size: 14px;
-      color: #555;
+      font-weight: 400;
+      font-size: 13px;
+      color: var(--secondary);
       display: block;
-      margin-top: 2px;
+      margin-top: -4px;
     }
 
-    .cta {
-      margin-top: 30px;
-    }
+    h1 { font-size: 40px; line-height: 1.2; margin-bottom: 20px; letter-spacing: -1px; }
+    h2 { font-size: 26px; margin-top: 50px; border-bottom: 1px solid var(--border); padding-bottom: 10px; letter-spacing: -0.5px; }
+    h3 { font-size: 19px; margin-bottom: 12px; }
+
+    p, li { font-size: 17.5px; color: #333; }
+    .lead { font-size: 20px; color: var(--secondary); margin-bottom: 30px; }
+
+    .cta { margin: 40px 0; display: flex; gap: 12px; flex-wrap: wrap; }
 
     .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      margin-right: 12px;
-      border-radius: 6px;
+      padding: 14px 26px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      border: 1px solid #111;
-    }
-
-    .btn-primary {
-      background: #111;
-      color: #fff;
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: #111;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    /* DIAGRAM */
-    .diagram {
-      margin-top: 30px;
+      transition: all 0.2s ease;
+      display: inline-block;
       text-align: center;
     }
 
-    .diagram img {
-      max-width: 100%;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 10px;
+    .btn-primary { 
+      background: var(--primary); 
+      color: #fff; 
+      border: 1px solid var(--primary); 
+    }
+    .btn-primary:hover { 
+      background: #333; 
+      transform: translateY(-1px); 
     }
 
-    /* MVP BOXES */
-    .mvp-boxes {
+    .btn-secondary { 
+      background: transparent; 
+      color: var(--primary); 
+      border: 1px solid var(--border); 
+    }
+    .btn-secondary:hover { 
+      background: var(--box-bg); 
+      border-color: var(--primary); 
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: var(--secondary);
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .notice {
+      font-size: 14px;
+      color: var(--secondary);
+      margin-top: 15px;
+      padding: 12px;
+      background: var(--box-bg);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .highlight-box {
+      background: var(--accent-muted);
+      border-left: 4px solid #ddd;
+      padding: 20px;
+      margin: 32px 0;
+      border-radius: 0 4px 4px 0;
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
@@ -91,168 +120,159 @@
     }
 
     .box {
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
-      padding: 20px;
-      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--box-bg);
     }
 
-    .box h3 {
-      margin-top: 0;
-      font-size: 22px;
-    }
+    .box ul { padding-left: 20px; }
+    .box li { margin-bottom: 8px; font-size: 16px; }
 
     footer {
-      border-top: 1px solid #eee;
-      margin-top: 80px;
-      padding-top: 30px;
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
       font-size: 15px;
+      color: var(--secondary);
     }
 
     footer a {
-      color: #111;
+      color: var(--primary);
       text-decoration: none;
-      margin-right: 15px;
+      margin-right: 20px;
+      font-weight: 500;
     }
 
-    @media (max-width: 700px) {
-      h1 { font-size: 36px; }
-      h2 { font-size: 28px; }
-      p, li { font-size: 18px; }
-
-      .mvp-boxes {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      .grid { grid-template-columns: 1fr; }
+      .cta { flex-direction: column; }
+      .btn { width: 100%; box-sizing: border-box; }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- LOGO -->
+  <!-- LOGO -->
+  <header>
     <div class="logo">
       CareScribe
-      <span>by ProtolQ</span>
+      <span>Documentation Review Support for Social Care</span>
     </div>
+  </header>
 
-    <!-- HERO -->
-    <h1>Care Act–ready case notes.<br />From conversation to compliance in minutes.</h1>
+  <!-- HERO -->
+  <main>
+    <h1>Spot documentation gaps before they become audit concerns.</h1>
 
-    <p>
-      ProtolQ CareScribe turns recorded social care visits into structured, compliant case notes
-      with risks, actions, and safeguarding signals clearly captured and reviewed by you.
+    <p class="lead">
+      CareScribe helps care teams identify missing details, inconsistencies, and unclear context in case notes — before they are reviewed or audited.
     </p>
 
     <div class="cta">
-      <a class="btn btn-primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the early access waitlist</a>
-      <a class="btn btn-secondary" href="https://github.com/ChristianOnuoha/ProtolQ-CareScribe/blob/main/concept/mvp-scope-public.md" target="_blank">View MVP scope</a>
+      <a class="btn btn-primary" href="https://tally.so" target="_blank">Join Early Access</a>
+      <a class="btn btn-secondary" href="https://github.com" target="_blank">View Research Repository</a>
     </div>
 
-    <p><small>Built for UK adult social care • Privacy-first • No audio stored</small></p>
+    <p class="tagline">Privacy-first • Human-in-the-loop • Designed for real workflows</p>
+
+    <div class="notice">
+      <strong>Disclaimer:</strong> CareScribe highlights potential documentation gaps and risks. Final professional judgment and compliance responsibility remain with the user.
+    </div>
 
     <!-- PROBLEM -->
-    <h2>Documentation is stealing time from care.</h2>
-    <ul>
-      <li>Care workers write notes after visits; tired, rushed, incomplete</li>
-      <li>Most tools give transcripts, not compliance-ready notes</li>
-      <li>Missing details create risk, rework, and burnout</li>
-    </ul>
+    <section>
+      <h2>The Problem: Gaps in Documentation Visibility</h2>
+      <p>
+        In regulated care environments, good care must be clearly reflected in documentation. Many risks arise not from care delivery, but from <strong>missing or incomplete narrative records</strong>.
+      </p>
+      <ul>
+        <li>Notes written after visits may miss key details.</li>
+        <li>Incidents recorded without clear outcomes or follow-up.</li>
+        <li>Changes in condition documented without escalation context.</li>
+        <li>Manual reviews that are time-consuming and inconsistent.</li>
+      </ul>
+    </section>
+
+    <!-- INSIGHT -->
+    <div class="highlight-box">
+      "Documentation issues are often identified far too late during an audit—not at the point of writing where they can be fixed."
+    </div>
 
     <!-- SOLUTION -->
-    <h2>Meet ProtolQ CareScribe.</h2>
-    <p>
-      CareScribe listens to visit conversations and helps draft structured, Care Act–aligned case notes,
-      ready for human review, editing, and approval.
-    </p>
-    <p><strong>You stay in control. CareScribe supports the paperwork.</strong></p>
+    <section>
+      <h2>A Smarter Documentation Review Layer</h2>
+      <p>
+        CareScribe acts as a support layer during documentation. It reviews notes to surface areas that may require clarification or completion.
+      </p>
+      <ul>
+        <li>Highlights missing or incomplete narrative sections.</li>
+        <li>Surfaces potential inconsistencies in documentation.</li>
+        <li>Identifies entries that may require follow-up or clarification.</li>
+        <li>Supports more consistent and review-ready records.</li>
+      </ul>
+    </section>
 
-    <ul>
-      <li>Transcribes visit conversations</li>
-      <li>Structures notes into clear sections</li>
-      <li>Flags missing or unclear information</li>
-      <li>Produces editable draft notes</li>
-    </ul>
+    <!-- WORKFLOW -->
+    <section>
+      <h2>How CareScribe Reviews Documentation</h2>
+      <p><strong>Input</strong> &rarr; <strong>Structured Notes</strong> &rarr; <strong>Pattern-Based Review</strong> &rarr; <strong>Flagged areas for Human Review</strong></p>
+    </section>
 
-    <p><strong>Not just transcription. Care intelligence.</strong></p>
-
-    <!-- DIAGRAM -->
-    <h2>How CareScribe works</h2>
-    <div class="diagram">
-      <img src="carescribe-architecture.png" alt="CareScribe architecture diagram" />
-      <p><small>From voice → structured care notes → export. No audio storage. Human review always.</small></p>
-    </div>
-
-    <!-- MVP BOXED -->
-    <h2>Designed for real care workflows</h2>
-
-    <div class="mvp-boxes">
-      <div class="box">
-        <h3>What the MVP does</h3>
-        <ul>
-          <li>Record care visits</li>
-          <li>Generate structured care notes</li>
-          <li>Flag missing compliance elements</li>
-          <li>Highlight risks & next actions</li>
-          <li>Export as PDF or structured text</li>
-        </ul>
+    <!-- FEATURES -->
+    <section>
+      <h2>Designed for Accountability</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>✅ What it does</h3>
+          <ul>
+            <li>Highlights documentation gaps</li>
+            <li>Surfaces missing context</li>
+            <li>Supports review workflows</li>
+            <li>Improves narrative consistency</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>❌ What it does not do</h3>
+          <ul>
+            <li>Replace professional judgment</li>
+            <li>Provide clinical decisions</li>
+            <li>Guarantee compliance outcomes</li>
+            <li>Act without human oversight</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="box">
-        <h3>What it does not do</h3>
-        <ul>
-          <li>Clinical diagnosis or advice</li>
-          <li>Care Act or MCA assessments</li>
-          <li>Replace professional judgment</li>
-          <li>Store raw audio</li>
-          <li>Submit reports automatically</li>
-        </ul>
+    <!-- VALIDATION -->
+    <section>
+      <h2>In Validation with Care Professionals</h2>
+      <p>
+        CareScribe is currently being refined with input from care professionals to better understand documentation challenges and real-world audit pressures.
+      </p>
+      <p>
+        <strong>Are you a Care Manager or Coordinator?</strong> Your expertise can help shape how this system evolves to better support care teams.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://tally.so" target="_blank">Partner for Validation</a>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- TRUST -->
-    <h2>Designed for trust, privacy, and accountability.</h2>
-    <ul>
-      <li>Audio auto-deleted after transcription</li>
-      <li>Human approval required</li>
-      <li>No hidden automation</li>
-      <li>Built with UK care frameworks in mind</li>
-    </ul>
-
-    <p><small>CareScribe supports documentation. Professional accountability remains with the user.</small></p>
-
-    <!-- WHO IT'S FOR -->
-    <h2>Built for adult social care professionals</h2>
-    <ul>
-      <li>Social workers</li>
-      <li>Community-based care teams</li>
-      <li>Care agencies</li>
-      <li>Domiciliary care providers</li>
-    </ul>
-
-    <!-- CTA -->
-    <h2>We’re piloting with UK care professionals.</h2>
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>CareScribe</strong> — A research-led product by Ikesys Innovations Ltd.</p>
     <p>
-      CareScribe is in early pilot. We’re validating real workflows not chasing features.
-      If you work in UK adult social care and want to reduce documentation fatigue, we’d like to hear from you.
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="mailto:support@protolq.com">Contact Research Team</a>
     </p>
+  </footer>
 
-    <a class="btn btn-primary" href="https://tally.so/r/9qZeMG" target="_blank">Join the waitlist</a>
+</div>
 
-    <!-- FOOTER -->
-    <footer>
-  <p>
-    <strong>ProtolQ CareScribe</strong><br />
-    A product by Ikesys Innovations Ltd
-  </p>
-
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> ·
-    <a href="mailto:support@protolq.com">support@protolq.com</a><br />
-    <span style="font-size: 0.9em; color: #666;">
-      Opens your default email app
-    </span>
-  </p>
-</footer>
-
+</body>
+</html>
