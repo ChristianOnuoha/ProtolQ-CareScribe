@@ -20,7 +20,7 @@ In day-to-day care environments, documentation is completed under extreme time p
 
 ## 🚀 Simulation Prototype
 An early-stage simulation has been built to explore how documentation risk flags might work in practice.
-*   **Live Simulation:** [CareScribe Simulation Link](https://carescribe-flow-sim.bubbleapps.io)
+*   **Live Simulation:** [CareScribe Simulation Link]([https://carescribe-flow-sim.bubbleapps.io](https://carescribe-flow-sim.bubbleapps.io/version-test))
 *   **Status:** No production system is being built at this stage. The focus is on understanding the problem deeply before designing solutions.
 
 ---
