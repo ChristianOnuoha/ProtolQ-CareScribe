@@ -2,156 +2,290 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- 🔥 TITLE (what shows in browser tab + Google) -->
-  <title>CareScribe — Prevent Documentation Risks Before CQC Inspections</title>
-
-  <!-- 🔥 DESCRIPTION (what shows on Google + LinkedIn preview) -->
-  <meta name="description" content="CareScribe helps care teams detect missing documentation, inconsistencies, and escalation gaps before audits — reducing compliance risk." />
-
-  <!-- 🔥 OPEN GRAPH (THIS CONTROLS LINK PREVIEW ON LINKEDIN) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareScribe Documentation Review & Audit Readiness Support</title>
+  
+  <!-- Open Graph / LinkedIn / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://protolq.com">
   <meta property="og:title" content="Prevent Documentation Gaps Before They Become Compliance Risks">
   <meta property="og:description" content="CareScribe flags missing context, inconsistencies, and escalation gaps in care notes — before inspections happen.">
   <meta property="og:image" content="https://protolq.com/og-image.png">
-  <meta property="og:url" content="https://protolq.com">
 
-  <!-- 🔥 BASIC STYLING -->
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://protolq.com">
+  <meta property="twitter:title" content="Prevent Documentation Gaps Before They Become Compliance Risks">
+  <meta property="twitter:description" content="CareScribe flags missing context, inconsistencies, and escalation gaps in care notes — before inspections happen.">
+  <meta property="twitter:image" content="https://protolq.com/og-image.png">
+
   <style>
+    :root {
+      --primary: #111;
+      --secondary: #555;
+      --bg: #fff;
+      --box-bg: #fafafa;
+      --border: #e5e5e5;
+      --accent-muted: #f6f6f6;
+    }
+
     body {
-      font-family: -apple-system, Inter, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
+      color: var(--primary);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 60px 24px;
     }
 
-    h1 {
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 20px;
+    .logo {
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
     }
 
-    h2 {
-      margin-top: 60px;
-      font-size: 28px;
+    .logo span {
+      font-weight: 400;
+      font-size: 13px;
+      color: var(--secondary);
+      display: block;
+      margin-top: -4px;
     }
 
-    .lead {
-      font-size: 18px;
-      color: #444;
-    }
+    h1 { font-size: 40px; line-height: 1.2; margin-bottom: 20px; letter-spacing: -1px; }
+    h2 { font-size: 26px; margin-top: 50px; border-bottom: 1px solid var(--border); padding-bottom: 10px; letter-spacing: -0.5px; }
+    h3 { font-size: 19px; margin-bottom: 12px; }
 
-    .cta {
-      margin-top: 30px;
-    }
+    p, li { font-size: 17.5px; color: #333; }
+    .lead { font-size: 20px; color: var(--secondary); margin-bottom: 30px; }
+
+    .cta { margin: 40px 0; display: flex; gap: 12px; flex-wrap: wrap; }
 
     .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin-right: 10px;
+      padding: 14px 26px;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: 600;
+      transition: all 0.2s ease;
+      display: inline-block;
+      text-align: center;
     }
 
-    .btn-primary {
-      background: #111;
-      color: white;
+    .btn-primary { 
+      background: var(--primary); 
+      color: #fff; 
+      border: 1px solid var(--primary); 
+    }
+    .btn-primary:hover { 
+      background: #333; 
+      transform: translateY(-1px); 
     }
 
-    .btn-secondary {
-      border: 1px solid #ccc;
-      color: #111;
+    .btn-secondary { 
+      background: transparent; 
+      color: var(--primary); 
+      border: 1px solid var(--border); 
     }
-
-    ul {
-      margin-top: 20px;
+    .btn-secondary:hover { 
+      background: var(--box-bg); 
+      border-color: var(--primary); 
     }
 
     .tagline {
-      margin-top: 20px;
-      color: #777;
-      font-size: 14px;
+      font-size: 13px;
+      color: var(--secondary);
+      margin-top: 10px;
+      font-weight: 500;
     }
 
-    .quote {
-      margin-top: 40px;
+    .notice {
+      font-size: 14px;
+      color: var(--secondary);
+      margin-top: 15px;
+      padding: 12px;
+      background: var(--box-bg);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .highlight-box {
+      background: var(--accent-muted);
+      border-left: 4px solid #ddd;
+      padding: 20px;
+      margin: 32px 0;
+      border-radius: 0 4px 4px 0;
       font-style: italic;
-      font-size: 20px;
-      color: #333;
+      color: var(--secondary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .box {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--box-bg);
+    }
+
+    .box ul { padding-left: 20px; }
+    .box li { margin-bottom: 8px; font-size: 16px; }
+
+    footer {
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--secondary);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      .grid { grid-template-columns: 1fr; }
+      .cta { flex-direction: column; }
+      .btn { width: 100%; box-sizing: border-box; }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- 🔥 HERO -->
-    <h1>Prevent documentation gaps before they become compliance risks.</h1>
+  <!-- LOGO -->
+  <header>
+    <div class="logo">
+      CareScribe
+      <span>by ProtolQ</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <h1>Detect documentation risks before your next inspection.</h1>
 
     <p class="lead">
-      CareScribe helps care teams identify missing context, incomplete narratives, and escalation gaps in documentation — before audits or inspections.
+      CareScribe identifies the narrative gaps and escalation omissions in care notes that trigger compliance red flags—strengthening your records before they are reviewed.
     </p>
 
     <div class="cta">
-      <a class="btn btn-primary" href="https://tally.so" target="_blank">Request Early Access</a>
-      <a class="btn btn-secondary" href="https://github.com" target="_blank">View Research</a>
+      <a class="btn btn-primary" href="https://tally.so" target="_blank">Join Early Access</a>
+      <a class="btn btn-secondary" href="https://github.com" target="_blank">View Research Repository</a>
     </div>
 
-    <p class="tagline">Built for care teams • Privacy-first • Human-in-the-loop</p>
+    <p class="tagline">Privacy-first • Human-in-the-loop • Designed for real workflows</p>
 
-
-    <!-- 🔥 PROBLEM -->
-    <h2>The Hidden Risk: Documentation Doesn’t Reflect Reality</h2>
-
-    <p>
-      In regulated care environments, risk doesn’t just come from poor care — it comes from <strong>poorly captured care</strong>.
-    </p>
-
-    <ul>
-      <li>Critical details missed in post-visit notes</li>
-      <li>Incidents recorded without outcomes</li>
-      <li>No clear escalation trails</li>
-      <li>Manual audits that miss patterns</li>
-    </ul>
-
-
-    <!-- 🔥 INSIGHT -->
-    <p class="quote">
-      “Most compliance issues aren’t caused by care — they’re caused by what’s missing in the documentation.”
-    </p>
-
-
-    <!-- 🔥 SOLUTION -->
-    <h2>A Documentation Intelligence Layer</h2>
-
-    <p>
-      CareScribe reviews care notes to identify what’s missing, unclear, or inconsistent — helping teams strengthen documentation before it’s reviewed.
-    </p>
-
-
-    <!-- 🔥 CTA -->
-    <h2>Shape the Future of Documentation Review</h2>
-
-    <p>
-      We’re working with care managers and coordinators to refine how documentation risks are identified in real workflows.
-    </p>
-
-    <div class="cta">
-      <a class="btn btn-primary" href="https://tally.so" target="_blank">Join as Early Partner</a>
+    <div class="notice">
+      <strong>Disclaimer:</strong> CareScribe highlights potential documentation gaps and risks. Final professional judgment and compliance responsibility remain with the user.
     </div>
 
-  </div>
+    <!-- PROBLEM -->
+    <section>
+      <h2>The Problem: Gaps in Documentation Visibility</h2>
+      <p>
+        In regulated care environments, good care must be clearly reflected in documentation. Many risks arise not from care delivery, but from <strong>missing or incomplete narrative records</strong>.
+      </p>
+      <ul>
+        <li>Notes written after visits may miss key details.</li>
+        <li>Incidents recorded without clear outcomes or follow-up.</li>
+        <li>Changes in condition documented without escalation context.</li>
+        <li>Manual reviews that are time-consuming and inconsistent.</li>
+      </ul>
+    </section>
+
+    <!-- INSIGHT -->
+    <div class="highlight-box">
+      "Documentation issues are often identified far too late during an audit—not at the point of writing where they can be fixed."
+    </div>
+
+    <!-- SOLUTION -->
+    <section>
+      <h2>A Smarter Documentation Review Layer</h2>
+      <p>
+        CareScribe acts as a support layer during documentation. It reviews notes to surface areas that may require clarification or completion.
+      </p>
+      <ul>
+        <li>Highlights missing or incomplete narrative sections.</li>
+        <li>Surfaces potential inconsistencies in documentation.</li>
+        <li>Identifies entries that may require follow-up or clarification.</li>
+        <li>Supports more consistent and review-ready records.</li>
+      </ul>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section>
+      <h2>How CareScribe Reviews Documentation</h2>
+      <p><strong>Input</strong> &rarr; <strong>Structured Notes</strong> &rarr; <strong>Pattern-Based Review</strong> &rarr; <strong>Flagged areas for Human Review</strong></p>
+    </section>
+
+    <!-- FEATURES -->
+    <section>
+      <h2>Designed for Accountability</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>✅ What it does</h3>
+          <ul>
+            <li>Highlights documentation gaps</li>
+            <li>Surfaces missing context</li>
+            <li>Supports review workflows</li>
+            <li>Improves narrative consistency</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>❌ What it does not do</h3>
+          <ul>
+            <li>Replace professional judgment</li>
+            <li>Provide clinical decisions</li>
+            <li>Guarantee compliance outcomes</li>
+            <li>Act without human oversight</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALIDATION -->
+    <section>
+      <h2>In Validation with Care Professionals</h2>
+      <p>
+        CareScribe is currently being refined with input from care professionals to better understand documentation challenges and real-world audit pressures.
+      </p>
+      <p>
+        <strong>Are you a Care Manager or Coordinator?</strong> Your expertise can help shape how this system evolves to better support care teams.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://tally.so" target="_blank">Partner for Validation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>CareScribe</strong> — A product by Ikesys Innovations Ltd.</p>
+    <p>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="mailto:support@protolq.com">Contact Research Team</a>
+    </p>
+  </footer>
+
+</div>
 
 </body>
 </html>
