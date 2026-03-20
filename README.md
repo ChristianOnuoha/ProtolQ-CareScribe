@@ -40,7 +40,7 @@ An early-stage simulation has been built to explore how documentation risk flags
 ---
 
 ## 💡 Why This Matters
-In adult social care, **good care must be visible in documentation.** When records lack clarity, reviewers cannot fully understand what actions were taken and why. This creates risk—not necessarily because care was poor, but because the *evidence* of care is incomplete.
+In adult social care, **good care must be visible in documentation.** When records lack clarity, reviewers cannot fully understand what actions were taken and why. This creates risk not necessarily because care was poor, but because the *evidence* of care is incomplete.
 
 ### Current Focus:
 *   Running structured usability conversations with care professionals.
