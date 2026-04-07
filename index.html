@@ -4,7 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>CareScribe — AI CQC Compliance Scanner</title>
+<title>Inspect — CQC Compliance Intelligence | ProtolQ</title>
+
+<!-- FAVICON -->
+<link rel="icon" href="/favicon.ico" />
 
 <style>
 :root {
@@ -29,12 +32,22 @@ body {
   padding: 80px 24px;
 }
 
+/* LOGO */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 60px;
 }
 
+.logo-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* HERO */
 h1 {
   font-size: 42px;
   line-height: 1.2;
@@ -48,6 +61,7 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* CTA */
 .cta {
   display: flex;
   gap: 12px;
@@ -77,6 +91,7 @@ h1 {
   color: var(--primary);
 }
 
+/* SECTIONS */
 .section {
   margin-top: 80px;
 }
@@ -131,38 +146,50 @@ footer {
 <div class="container">
 
 <!-- LOGO -->
-<div class="logo">CareScribe</div>
+<div class="logo">
+  <!-- SIMPLE SHIELD + P -->
+  <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+    <path d="M12 2L20 6V12C20 17 16.5 21 12 22C7.5 21 4 17 4 12V6L12 2Z"/>
+    <text x="12" y="15" text-anchor="middle" font-size="10" fill="black" font-family="Arial">P</text>
+  </svg>
+  Inspect <span style="color:#6b7280;font-weight:500;">by ProtolQ</span>
+</div>
 
 <!-- HERO -->
 <h1>
-AI-Powered CQC Compliance.  
-Detect risks before inspectors do.
+Detect documentation risks  
+before inspection.
 </h1>
 
 <p class="lead">
-Scan care notes instantly. Identify documentation gaps, missed escalation, and compliance risks — in seconds.
+Inspect is a compliance intelligence system that identifies documentation gaps, missing escalation, and audit risks — instantly.
 </p>
 
 <div class="cta">
-<a class="btn btn-primary" href="http://localhost:5500">Run Free Scan</a>
+<a class="btn btn-primary" href="https://app.protolq.com">Run Free Scan</a>
 <a class="btn btn-secondary" href="https://tally.so" target="_blank">Join Early Access</a>
 </div>
 
 <p style="font-size:14px;color:#6b7280;">
-No setup required • Instant results • Built for care teams
+No setup required • Instant analysis • Built for care teams
 </p>
 
+<iframe 
+  src="https://app.protolq.com" 
+  width="100%" 
+  height="600" 
+  style="border:none; border-radius:12px;">
+</iframe>
+  
 <!-- PROBLEM -->
 <div class="section">
 <h2>Most audit failures aren’t about care.</h2>
-<p>
-They’re about documentation.
-</p>
+<p>They’re about documentation.</p>
 
 <p>
 Missing notes.  
 No escalation.  
-Vague entries.
+Incomplete records.
 </p>
 
 <p>
@@ -172,37 +199,37 @@ That’s where compliance breaks.
 
 <!-- SOLUTION -->
 <div class="section">
-<h2>CareScribe fixes that instantly.</h2>
+<h2>Inspect fixes that instantly.</h2>
 
 <div class="grid">
 <div class="box">
 <strong>Risk Detection</strong>
-<p>Flags compliance gaps in real-time using structured CQC rules.</p>
+<p>Identifies compliance gaps using structured regulatory logic.</p>
 </div>
 
 <div class="box">
 <strong>Action Plans</strong>
-<p>Generates clear, structured actions your team can follow immediately.</p>
+<p>Generates clear next steps for immediate correction.</p>
 </div>
 
 <div class="box">
 <strong>Audit Reports</strong>
-<p>Download professional, inspection-ready reports in seconds.</p>
+<p>Download professional, inspection-ready reports instantly.</p>
 </div>
 
 <div class="box">
-<strong>Score System</strong>
-<p>Understand compliance health with a clear, visual score.</p>
+<strong>Compliance Score</strong>
+<p>Understand documentation quality with a clear score.</p>
 </div>
 </div>
 </div>
 
-<!-- DEMO FLOW -->
+<!-- FLOW -->
 <div class="section">
 <h2>How it works</h2>
 
 <div class="highlight">
-Paste care note → Detect risks → Get action plan → Export report
+Paste note → Detect risks → Generate action plan → Export report
 </div>
 </div>
 
@@ -211,22 +238,22 @@ Paste care note → Detect risks → Get action plan → Export report
 <h2>Built for real care environments</h2>
 <p>
 Designed to support care teams — not replace them.  
-Every insight is structured, explainable, and aligned with compliance standards.
+Every output is structured, explainable, and aligned with compliance standards.
 </p>
 </div>
 
 <!-- FINAL CTA -->
 <div class="section">
-<h2>Start your first scan</h2>
+<h2>Run your first scan</h2>
 
 <div class="cta">
-<a class="btn btn-primary" href="http://localhost:5500">Run Free Scan</a>
+<a class="btn btn-primary" href="https://app.protolq.com">Run Free Scan</a>
 </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-<p>CareScribe — A product by Ikesys Innovations Ltd.</p>
+<p><strong>Inspect</strong> — A ProtolQ System</p>
 <p>support@protolq.com</p>
 </footer>
 
